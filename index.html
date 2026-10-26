@@ -4,16 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Стоматология «Доверие» в Хэйхэ — лечение и протезирование зубов в Китае</title>
-<meta name="description" content="Стоматология «Доверие» (众信口腔) в Хэйхэ, напротив Благовещенска. Протезирование, имплантация, коронки и виниры. Цены в 2–4 раза ниже, чем в России, результат за 3–5 дней, гарантия до 20 лет.">
+<meta name="description" content="Стоматология «Доверие» (众信口腔) в Хэйхэ, напротив Благовещенска. Протезирование, имплантация, коронки и виниры. Изготовление коронок и протезов за 3–5 дней, собственный КТ.">
 <meta property="og:title" content="Стоматология «Доверие» в Хэйхэ">
-<meta property="og:description" content="Лечение и протезирование зубов в Китае: в 2–4 раза дешевле, за 3–5 дней, с гарантией до 20 лет.">
+<meta property="og:description" content="Протезирование и лечение зубов в Хэйхэ (КНР), напротив Благовещенска.">
 <meta property="og:image" content="assets/img/facade.jpg">
 <meta name="theme-color" content="#0b6b5a">
 <link rel="icon" href="assets/img/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
+/* Шрифт хранится на сайте: страница не обращается к сторонним серверам */
+@font-face{font-family:Manrope;font-style:normal;font-weight:400 800;font-display:swap;src:url(assets/fonts/manrope-cyrillic.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:Manrope;font-style:normal;font-weight:400 800;font-display:swap;src:url(assets/fonts/manrope-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 :root{
   --green:#0b6b5a; --green-d:#074a3e; --green-dd:#05322a;
   --mint:#eef7f4; --mint-2:#dcefe9; --red:#c8202f;
@@ -121,13 +121,8 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdro
 .price details ul{margin:10px 0 0;padding-left:20px;color:var(--muted);font-size:15.5px}
 .note{margin-top:26px;color:var(--muted);font-size:15px;text-align:center}
 
-/* before/after */
-.ba{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.ba figure{margin:0;border-radius:var(--radius);overflow:hidden;background:#fff;position:relative}
-.ba img{width:100%;aspect-ratio:3/4;object-fit:cover}
-.tag{position:absolute;left:14px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:rgba(5,50,42,.85);color:#fff;padding:5px 10px;border-radius:8px}
-.tag.t1{top:14px}.tag.t2{top:calc(50% + 10px);background:var(--red)}
-.videos{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:18px}
+.videos{display:grid;grid-template-columns:repeat(2,minmax(0,300px));justify-content:center;gap:16px;margin-top:16px}
+.btn-tg{background:#229ed9;color:#fff}.btn-tg:hover{background:#1b88bc}
 .videos video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:var(--radius);background:#000}
 
 /* gallery */
@@ -147,19 +142,6 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdro
 .svc p{color:#cfe3dd;font-size:16px;margin:0}
 .svc .guide{display:flex;align-items:center;gap:14px;margin-bottom:18px}
 .svc .guide img{width:56px;height:56px;border-radius:50%;object-fit:cover;object-position:top;background:#fff}
-
-/* reviews */
-.reviews{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
-.review{background:#fff;border-radius:var(--radius);padding:30px;box-shadow:var(--shadow);display:flex;flex-direction:column}
-.review .stars{color:#f2b01e;letter-spacing:3px;margin-bottom:12px}
-.review p{font-size:16.5px}
-.review .more{display:none}
-.review.open .more{display:inline}
-.review .toggle{background:none;border:0;padding:0;color:var(--green);font:inherit;font-weight:700;cursor:pointer;align-self:flex-start;margin-bottom:16px}
-.who{display:flex;align-items:center;gap:12px;margin-top:auto}
-.avatar{width:46px;height:46px;border-radius:50%;background:var(--mint-2);color:var(--green-d);display:grid;place-items:center;font-weight:800}
-.who b{display:block}
-.who small{color:var(--muted)}
 
 /* faq */
 .faq{max-width:860px;margin:0 auto}
@@ -187,26 +169,20 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdro
 .c-list b{display:block}
 .c-list a{color:var(--ink);font-weight:700;text-decoration:none}
 .messengers{display:flex;flex-wrap:wrap;gap:12px}
-.btn-wa{background:#25d366;color:#fff}.btn-wa:hover{background:#1eb757}
-.btn-tg{background:#229ed9;color:#fff}.btn-tg:hover{background:#1b88bc}
-form.lead-form{background:#fff;border-radius:var(--radius);padding:32px;box-shadow:var(--shadow)}
-.lead-form h3{font-size:24px}
-.lead-form p{color:var(--muted);font-size:15.5px}
-.lead-form label{display:block;font-weight:700;font-size:14px;margin:14px 0 6px}
-.lead-form input,.lead-form select,.lead-form textarea{width:100%;font:inherit;font-size:16px;padding:14px 16px;border:1.5px solid var(--line);border-radius:12px;background:#fbfdfc;color:var(--ink)}
-.lead-form input:focus,.lead-form select:focus,.lead-form textarea:focus{outline:none;border-color:var(--green)}
-.lead-form textarea{min-height:90px;resize:vertical}
-.lead-form .row{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}
-.lead-form .row .btn{flex:1}
 .map{margin-top:40px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);height:380px;background:var(--mint)}
 .map iframe{width:100%;height:100%;border:0}
 
 footer{background:var(--green-dd);color:#a9c9c0;padding:40px 0;font-size:14.5px}
 footer .wrap{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
 footer a{color:#fff}
+.foot-warn{flex-basis:100%;margin:0;padding-top:16px;border-top:1px solid rgba(255,255,255,.15);font-size:13.5px}
+.warn-hero{margin:26px 0 0;font-size:14px;font-weight:700;letter-spacing:.02em;text-transform:uppercase;color:#cfe6df}
+.legal-box{background:#fff;border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
+.legal-box p{color:var(--muted);font-size:15.5px}
+.legal-box .warn{margin:0;padding:14px 16px;border-radius:12px;background:var(--mint-2);color:var(--green-dd);font-weight:800;font-size:16px;text-transform:uppercase;letter-spacing:.02em}
 
 /* floating call button (mobile) */
-.fab{display:none;position:fixed;right:16px;bottom:16px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25d366;box-shadow:0 8px 24px rgba(0,0,0,.25);place-items:center}
+.fab{display:none;position:fixed;right:16px;bottom:16px;z-index:60;width:58px;height:58px;border-radius:50%;background:var(--green);box-shadow:0 8px 24px rgba(0,0,0,.25);place-items:center}
 .fab svg{width:30px;height:30px}
 
 /* responsive */
@@ -228,12 +204,10 @@ footer a{color:#fff}
   .hero .wrap{padding-top:60px;padding-bottom:60px}
   .hero .lead{font-size:17px}
   .hero-actions .btn{flex:1 1 100%}
-  .steps,.free,.service,.prices,.reviews,.ba,.lic{grid-template-columns:1fr}
-  .ba img{aspect-ratio:4/5}
+  .steps,.free,.service,.prices,.lic{grid-template-columns:1fr}
   .gallery .wide{grid-column:span 2}
   .fab{display:grid}
   .price-top{flex-direction:column;gap:4px}
-  form.lead-form{padding:24px}
   .map{height:300px}
 }
 </style>
@@ -250,9 +224,7 @@ footer a{color:#fff}
       <a href="#about">О нас</a>
       <a href="#free">Бесплатно</a>
       <a href="#prices">Цены</a>
-      <a href="#results">До и после</a>
       <a href="#service">Сервис</a>
-      <a href="#reviews">Отзывы</a>
       <a href="#contacts">Контакты</a>
     </nav>
     <a class="phone" href="tel:+79627302769">+7 962 730-27-69</a>
@@ -266,19 +238,20 @@ footer a{color:#fff}
 <section class="hero">
   <div class="hero-bg" role="img" aria-label="Здание клиники «Доверие» в Хэйхэ"></div>
   <div class="wrap">
-    <span class="eyebrow" style="color:#8fe0c8">Стоматология в Китае · напротив Благовещенска</span>
-    <h1>Новая улыбка за <em>3–5 дней</em> в 2–4 раза дешевле, чем в России</h1>
-    <p class="lead">Стоматология «Доверие» в Хэйхэ: протезирование любой сложности, имплантация, коронки и виниры. Встретим, разместим, переведём и проводим на каждом этапе.</p>
+    <span class="eyebrow" style="color:#8fe0c8">Стоматологическая клиника в Хэйхэ (КНР) · напротив Благовещенска</span>
+    <h1>Протезирование зубов в Хэйхэ за <em>3–5 дней</em></h1>
+    <p class="lead">Стоматология «Доверие» в Хэйхэ: протезирование, имплантация, коронки и виниры. Гид-переводчик клиники поможет на каждом этапе.</p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="#contacts">Бесплатная консультация</a>
       <a class="btn btn-ghost" href="#prices">Смотреть цены</a>
     </div>
     <div class="hero-facts">
-      <div class="fact"><b>15+ лет</b><span>дарим здоровые улыбки</span></div>
       <div class="fact"><b>3–5 дней</b><span>мосты, протезы, коронки</span></div>
-      <div class="fact"><b>до 20 лет</b><span>гарантия на работу</span></div>
-      <div class="fact"><b>×2–4</b><span>дешевле, чем в России</span></div>
+      <div class="fact"><b>КТ</b><span>собственный томограф</span></div>
+      <div class="fact"><b>4 кресла</b><span>стоматологических</span></div>
+      <div class="fact"><b>Лицензия</b><span>медучреждения КНР</span></div>
     </div>
+    <p class="warn-hero">Имеются противопоказания. Необходима консультация специалиста.</p>
   </div>
 </section>
 
@@ -289,7 +262,7 @@ footer a{color:#fff}
       <span class="eyebrow">Кто мы</span>
       <h2>Ваша стоматология у самого порога</h2>
       <p class="lead">Мы находимся в городе Хэйхэ (Китай), прямо напротив Благовещенска. Для нас нет границ для красивых улыбок.</p>
-      <p>Мы верим, что поход к стоматологу — это не про страхи и боль, а про смелый шаг к себе новому. Уже более 15 лет мы дарим людям не просто здоровые зубы, а уверенность в себе и радость открытого общения. Наши пациенты приходят не просто «полечить зуб» — они приходят за обновлением.</p>
+      <p>Мы верим, что поход к стоматологу — это не про страхи и боль, а про смелый шаг к себе новому. Наши пациенты приходят не просто «полечить зуб» — они приходят за обновлением.</p>
       <ul class="checks">
         <li>Протезирование любой сложности</li>
         <li>Установка имплантов</li>
@@ -315,7 +288,7 @@ footer a{color:#fff}
     </div>
     <div class="steps">
       <div class="step"><h3>Решение</h3><p>Вы говорите себе: «Хочу изменить свою улыбку и жизнь!» — и это самый главный шаг. Напишите нам, и мы бесплатно составим план лечения.</p></div>
-      <div class="step"><h3>Поддержка</h3><p>Вы приезжаете в клинику, где вас встречает наш гид. Мы поддерживаем вас на каждом этапе — от трансфера до комфортного размещения. Вы не почувствуете себя одиноко!</p></div>
+      <div class="step"><h3>Поддержка</h3><p>Вы приезжаете в клинику, где вас встречает гид-переводчик. Он поможет на каждом этапе, и вы не почувствуете себя одиноко!</p></div>
       <div class="step"><h3>Преображение</h3><p>Наши доктора бережно берутся за дело. Всего за 3–5 дней подготовим зубы, изготовим и установим мосты, протезы или коронки. Никаких долгих месяцев ожидания!</p></div>
     </div>
   </div>
@@ -351,7 +324,7 @@ footer a{color:#fff}
         <div class="card-body">
           <span class="badge">Бесплатно</span>
           <h3>Компьютерная томография (КТ)</h3>
-          <p>Во время зубного тура мы дарим вам КТ. Это важный шаг перед протезированием: он помогает точно оценить состояние зубов и челюсти, увидеть детали, недоступные при обычном осмотре, и подобрать лучший способ восстановления улыбки.</p>
+          <p>При лечении в клинике КТ делается бесплатно. Это важный шаг перед протезированием: он помогает точно оценить состояние зубов и челюсти, увидеть детали, недоступные при обычном осмотре, и подобрать лучший способ восстановления улыбки.</p>
           <a class="btn btn-green" href="#contacts">Записаться</a>
         </div>
       </article>
@@ -380,7 +353,7 @@ footer a{color:#fff}
     <div class="sec-head center">
       <span class="eyebrow">Стоимость</span>
       <h2>Цены на протезирование</h2>
-      <p class="lead">В 2–4 раза ниже, чем в России, а работаем мы в десятки раз быстрее.</p>
+      <p class="lead">Ориентировочная стоимость за единицу. Точный расчёт — после бесплатной консультации.</p>
     </div>
     <div class="prices">
       <div class="price">
@@ -423,29 +396,7 @@ footer a{color:#fff}
         <details><summary>Подробнее</summary><ul><li>Визит 1: установка импланта в кость. Затем заживление около 5–6 месяцев</li><li>Визит 2: установка абатмента и коронки (искусственного зуба)</li><li>Титан редко вызывает аллергию и воспаления, прочен и служит долго</li></ul></details>
       </div>
     </div>
-    <p class="note">Точная стоимость рассчитывается после бесплатной консультации по снимку. Гарантия на работы — от 5 до 20 лет.</p>
-  </div>
-</section>
-
-<!-- RESULTS -->
-<section id="results">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Наши работы</span>
-      <h2>До и после</h2>
-      <p class="lead">Новая, естественная улыбка, которая дарит уверенность. Снова наслаждайтесь любимой едой и чёткой речью.</p>
-    </div>
-    <div class="ba">
-      <figure><img src="assets/img/ba-1.jpg" alt="Зубы пациента до и после протезирования" loading="lazy"><span class="tag t1">До</span><span class="tag t2">После</span></figure>
-      <figure><img src="assets/img/ba-2.jpg" alt="Зубы пациента до и после протезирования" loading="lazy"><span class="tag t1">До</span><span class="tag t2">После</span></figure>
-      <figure><img src="assets/img/ba-3.jpg" alt="Зубы пациента до и после протезирования" loading="lazy"><span class="tag t1">До</span><span class="tag t2">После</span></figure>
-    </div>
-    <div class="videos">
-      <video src="assets/video/ba-1.mp4" poster="assets/video/ba-1.jpg" controls playsinline preload="none"></video>
-      <video src="assets/video/ba-2.mp4" poster="assets/video/ba-2.jpg" controls playsinline preload="none"></video>
-      <video src="assets/video/facade.mp4" poster="assets/video/facade.jpg" controls playsinline preload="none"></video>
-      <video src="assets/video/clinic.mp4" poster="assets/video/clinic.jpg" controls playsinline preload="none"></video>
-    </div>
+    <p class="note">Цены указаны для справки и не являются публичной офертой. Оплата производится в клинике. Гарантийные сроки устанавливает клиника, уточняйте их на консультации.</p>
   </div>
 </section>
 
@@ -455,7 +406,7 @@ footer a{color:#fff}
     <div class="sec-head">
       <span class="eyebrow">Клиника</span>
       <h2>Современное оборудование и уютные кабинеты</h2>
-      <p class="lead">Передовые технологии, опытные специалисты и доступные цены делают лечение в Китае привлекательным выбором.</p>
+      <p class="lead">Собственный компьютерный томограф, современные кабинеты и внимательный персонал.</p>
     </div>
     <div class="gallery">
       <figure class="wide"><img src="assets/img/facade.jpg" alt="Многопрофильный медицинский центр «Доверие»" loading="lazy"><figcaption>Медицинский центр «Доверие»</figcaption></figure>
@@ -465,6 +416,10 @@ footer a{color:#fff}
       <figure><img src="assets/img/doctor-yulia.jpg" alt="Врач Юлия" loading="lazy"><figcaption>Врач Юлия</figcaption></figure>
       <figure class="wide"><img src="assets/img/ct-scan.jpg" alt="3D-снимок КТ на мониторе" loading="lazy"><figcaption>3D-диагностика на КТ</figcaption></figure>
     </div>
+    <div class="videos">
+      <video src="assets/video/facade.mp4" poster="assets/video/facade.jpg" controls playsinline preload="none" aria-label="Видео: здание клиники"></video>
+      <video src="assets/video/clinic.mp4" poster="assets/video/clinic.jpg" controls playsinline preload="none" aria-label="Видео: холл клиники"></video>
+    </div>
   </div>
 </section>
 
@@ -472,58 +427,25 @@ footer a{color:#fff}
 <section id="service" class="bg-dark">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">Включённые услуги</span>
-      <h2>Логистику берём на себя</h2>
-      <p class="lead" style="color:#cfe3dd">Вы можете рассчитывать на безопасность и спокойствие с самого начала и до конца поездки.</p>
+      <span class="eyebrow">Помощь пациентам</span>
+      <h2>Поможем с дорогой и проживанием</h2>
+      <p class="lead" style="color:#cfe3dd">Клиника помогает пациентам из России освоиться в Хэйхэ. Условия уточняйте при записи.</p>
     </div>
     <div class="service">
       <div class="svc">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M6 17V9l2-4h8l2 4v8"/><circle cx="8" cy="17" r="2"/><circle cx="16" cy="17" r="2"/><path d="M6 11h12"/></svg></div>
         <h3>Трансфер</h3>
-        <p>Трансфер в Китае и в Благовещенске, включая аэропорт. Удобный транспорт довезёт вас до гостиницы, клиники и на экскурсии.</p>
+        <p>Подскажем, как добраться из Благовещенска, и поможем с транспортом до клиники и гостиницы в Хэйхэ.</p>
       </div>
       <div class="svc">
         <div class="guide"><img src="assets/img/guide.jpg" alt="Гид-переводчик" loading="lazy"><h3 style="margin:0">Гид-переводчик</h3></div>
-        <p>Сопровождает вас в клинике, гостинице и на экскурсиях. Точно переводит консультации, инструкции и расписания. Никаких языковых барьеров: вы говорите — мы понимаем.</p>
+        <p>Сопровождает вас в клинике и переводит консультации, рекомендации врача и расписание приёмов. Никаких языковых барьеров.</p>
       </div>
       <div class="svc">
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20V8l9-5 9 5v12"/><path d="M3 20h18M9 20v-6h6v6"/></svg></div>
-        <h3>Бесплатное проживание</h3>
-        <p>Уютная гостиница: чистый номер с современным оборудованием и завтрак «шведский стол». Условие: протезирование от 10 коронок.</p>
+        <h3>Проживание</h3>
+        <p>Поможем подобрать гостиницу рядом с клиникой. При протезировании от 10 коронок клиника оплачивает проживание — условия уточняйте.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- REVIEWS -->
-<section id="reviews">
-  <div class="wrap">
-    <div class="sec-head center">
-      <span class="eyebrow">Отзывы</span>
-      <h2>Что говорят наши пациенты</h2>
-    </div>
-    <div class="reviews">
-      <article class="review">
-        <div class="stars">★★★★★</div>
-        <p>Девочки, это невероятно! Я наконец-то не просто мечтаю о голливудской улыбке, а живу с ней каждый день! Огромная благодарность клинике за мои новые зубы. Процесс был максимально комфортным, врачи — волшебники и большие профессионалы. Теперь я улыбаюсь каждому своему отражению! Всем рекомендую!</p>
-        <div class="who"><span class="avatar">ВВ</span><span><b>Варвара Васильева</b></span></div>
-      </article>
-      <article class="review">
-        <div class="stars">★★★★★</div>
-        <p>Хочу поделиться впечатлениями из лечебного тура в китайский город Хэйхэ, и впечатления остались самые положительные. В этом помогла мне Каролина, полностью продумав все нюансы от начала поездки туда и обратно. И конечно же гид Юра, без которого моя поездка была бы не столь интересной и комфортабельной.<span class="more"> Клиника выглядела современно и аккуратно, оборудование новое и качественное. Приём начался с подробной консультации врача-стоматолога, который внимательно выслушал мои жалобы и провёл тщательное обследование. После диагностики предложили оптимальный план лечения, учитывая мои пожелания и бюджет. Лечение прошло успешно и безболезненно. Результат превзошёл ожидания: теперь моя улыбка сияет белоснежностью, а уверенность в себе заметно возросла. Рекомендую этот тур всем, кто ищет достойную стоматологию и желает совместить лечение с приятным отдыхом.</span></p>
-        <button class="toggle" type="button">Читать полностью</button>
-        <div class="who"><span class="avatar">КА</span><span><b>Куннэй Антонова</b><small>Прошла комплексное лечение</small></span></div>
-      </article>
-      <article class="review">
-        <div class="stars">★★★★★</div>
-        <p>Очень понравилась клиника «Доверие»! Вежливый персонал, чисто и уютно. Врач — профессионал с большой буквы, всё сделала аккуратно и безболезненно. Спасибо за качественный сервис и внимательное отношение!</p>
-        <div class="who"><span class="avatar">ПН</span><span><b>Парасковья Николаева</b></span></div>
-      </article>
-      <article class="review">
-        <div class="stars">★★★★★</div>
-        <p>Лечение прошло успешно, персонал был внимателен и профессионален. Я рекомендую этот тур всем, кто ищет качественное лечение.</p>
-        <div class="who"><span class="avatar">ЕБ</span><span><b>Екатерина Борисова</b></span></div>
-      </article>
     </div>
   </div>
 </section>
@@ -538,16 +460,15 @@ footer a{color:#fff}
     <div class="faq">
       <details>
         <summary>Где проходит лечение?</summary>
-        <div class="ans">В стоматологии «Доверие» (众信口腔门诊部) в городе Хэйхэ, прямо напротив Благовещенска. Клиника работает по лицензии медицинского учреждения, копии документов — ниже на странице.</div>
+        <div class="ans">В стоматологии «Доверие» (众信口腔门诊部) в городе Хэйхэ (КНР), напротив Благовещенска. Клиника работает по лицензии медицинского учреждения КНР, копии документов — ниже на странице. Лечение проводится по законодательству КНР.</div>
       </details>
       <details>
-        <summary>Что включено в тур?</summary>
+        <summary>Что клиника делает бесплатно?</summary>
         <div class="ans"><ul>
-          <li>бесплатная консультация и план лечения по снимку;</li>
-          <li>бесплатная компьютерная томография (КТ);</li>
-          <li>трансфер в Китае и в Благовещенске;</li>
-          <li>сопровождение гида-переводчика;</li>
-          <li>при протезировании от 10 коронок — бесплатные лечение зубов и проживание в гостинице с завтраком.</li>
+          <li>консультация и план лечения по снимку;</li>
+          <li>компьютерная томография (КТ) при лечении в клинике;</li>
+          <li>помощь гида-переводчика в клинике;</li>
+          <li>при протезировании от 10 коронок — лечение зубов и проживание в гостинице.</li>
         </ul></div>
       </details>
       <details>
@@ -556,7 +477,7 @@ footer a{color:#fff}
       </details>
       <details>
         <summary>Какая гарантия на лечение?</summary>
-        <div class="ans">Мы настолько уверены в своём качестве, что даём гарантию от 5 до 20 лет — в зависимости от вида работы. Точный срок назовём на консультации.</div>
+        <div class="ans">Гарантийные сроки устанавливает клиника, они зависят от вида работы и материалов. Точный срок вам назовут на консультации и укажут в документах клиники.</div>
       </details>
       <details>
         <summary>Какие документы нужны для поездки?</summary>
@@ -588,39 +509,22 @@ footer a{color:#fff}
       <div>
         <span class="eyebrow">Контакты</span>
         <h2>Свяжитесь с нами</h2>
-        <p class="lead">Отправьте снимок или фото зубов — врач бесплатно составит план лечения и рассчитает стоимость.</p>
+        <p class="lead">Позвоните или напишите нам — расскажем о лечении, поможем с записью и рассчитаем стоимость.</p>
         <ul class="c-list">
           <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><span><b>Телефон</b><a href="tel:+79627302769">+7 962 730-27-69</a></span></li>
           <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span><b>Адрес</b>г. Хэйхэ, ул. Чжунъян, д. 614<br><small style="color:var(--muted)">黑龙江省黑河市爱辉区中央街614号</small></span></li>
         </ul>
         <div class="messengers">
-          <a class="btn btn-wa" href="https://wa.me/79627302769" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zm8.4-18.2A11.8 11.8 0 0 0 1.7 17.8L0 24l6.3-1.7A11.8 11.8 0 0 0 24 12c0-3.2-1.2-6.1-3.5-8.4z"/></svg>WhatsApp</a>
+          <a class="btn btn-green" href="tel:+79627302769">Позвонить</a>
           <a class="btn btn-tg" href="https://t.me/+79627302769" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.7 19.4c-.2 1.1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-5 9.2-8.3c.4-.4-.1-.6-.6-.2L6.2 13 1.3 11.5c-1.1-.3-1.1-1.1.2-1.6L20.6 2.5c.9-.3 1.7.2 1.3 1.8z"/></svg>Telegram</a>
         </div>
       </div>
-      <form class="lead-form" id="leadForm">
-        <h3>Оставьте заявку</h3>
-        <p>Заявка откроется в WhatsApp или Telegram — останется только нажать «Отправить».</p>
-        <label for="fName">Ваше имя</label>
-        <input id="fName" name="name" required autocomplete="name" placeholder="Например, Анна">
-        <label for="fPhone">Телефон</label>
-        <input id="fPhone" name="phone" type="tel" required autocomplete="tel" placeholder="+7 900 000-00-00">
-        <label for="fService">Что вас интересует</label>
-        <select id="fService" name="service">
-          <option>Бесплатная консультация</option>
-          <option>Протезирование / коронки</option>
-          <option>Имплантация</option>
-          <option>Виниры</option>
-          <option>Съёмные протезы</option>
-          <option>Лечение зубов</option>
-        </select>
-        <label for="fMsg">Комментарий</label>
-        <textarea id="fMsg" name="msg" placeholder="Удобные даты поездки, вопросы…"></textarea>
-        <div class="row">
-          <button class="btn btn-wa" type="submit" data-via="wa">Отправить в WhatsApp</button>
-          <button class="btn btn-tg" type="submit" data-via="tg">В Telegram</button>
-        </div>
-      </form>
+      <div class="legal-box">
+        <h3>Важная информация</h3>
+        <p>Медицинские услуги оказывает 黑河市爱辉区众信口腔门诊部 (стоматологическая клиника «Доверие», г. Хэйхэ, КНР) на основании лицензии медицинского учреждения КНР и в соответствии с законодательством КНР. Договор на лечение и оплата — непосредственно с клиникой.</p>
+        <p>Информация на сайте носит справочный характер и не является публичной офертой. Сайт не собирает персональные данные. Пожалуйста, не отправляйте медицинские документы и снимки, пока не ознакомитесь с <a href="privacy.html">порядком обработки данных</a>.</p>
+        <p class="warn">Имеются противопоказания. Необходима консультация специалиста.</p>
+      </div>
     </div>
     <div class="map">
       <iframe src="https://yandex.ru/map-widget/v1/?text=%D0%A5%D1%8D%D0%B9%D1%85%D1%8D%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A7%D0%B6%D1%83%D0%BD%D1%8A%D1%8F%D0%BD%2C%20614&amp;z=16" title="Клиника на карте" loading="lazy" allowfullscreen></iframe>
@@ -633,11 +537,12 @@ footer a{color:#fff}
 <footer>
   <div class="wrap">
     <span>© <span id="year">2026</span> Стоматология «Доверие» · 黑河市爱辉区众信口腔门诊部</span>
-    <span><a href="tel:+79627302769">+7 962 730-27-69</a> · г. Хэйхэ, ул. Чжунъян, 614</span>
+    <span><a href="tel:+79627302769">+7 962 730-27-69</a> · г. Хэйхэ, ул. Чжунъян, 614 · <a href="privacy.html">Конфиденциальность</a></span>
+    <p class="foot-warn">Имеются противопоказания. Необходима консультация специалиста. Медицинские услуги оказываются в КНР клиникой 黑河市爱辉区众信口腔门诊部.</p>
   </div>
 </footer>
 
-<a class="fab" href="https://wa.me/79627302769" target="_blank" rel="noopener" aria-label="Написать в WhatsApp"><svg viewBox="0 0 24 24" fill="#fff"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zm8.4-18.2A11.8 11.8 0 0 0 1.7 17.8L0 24l6.3-1.7A11.8 11.8 0 0 0 24 12c0-3.2-1.2-6.1-3.5-8.4z"/></svg></a>
+<a class="fab" href="tel:+79627302769" aria-label="Позвонить"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></a>
 
 <script>
 (function(){
@@ -648,33 +553,9 @@ footer a{color:#fff}
   });
   menu.addEventListener('click',function(e){ if(e.target.tagName==='A'){menu.classList.remove('open');burger.setAttribute('aria-expanded','false');} });
 
-  document.querySelectorAll('.review .toggle').forEach(function(b){
-    b.addEventListener('click',function(){
-      var r=b.closest('.review'), open=r.classList.toggle('open');
-      b.textContent=open?'Свернуть':'Читать полностью';
-    });
-  });
-
   // Only one video plays at a time
   var vids=document.querySelectorAll('video');
   vids.forEach(function(v){ v.addEventListener('play',function(){ vids.forEach(function(o){ if(o!==v) o.pause(); }); }); });
-
-  // The form has no server: it composes a message and opens the messenger
-  var form=document.getElementById('leadForm'), via='wa';
-  form.querySelectorAll('button[data-via]').forEach(function(b){ b.addEventListener('click',function(){ via=b.dataset.via; }); });
-  form.addEventListener('submit',function(e){
-    e.preventDefault();
-    var f=form.elements;
-    var text='Здравствуйте! Заявка с сайта.\nИмя: '+f.name.value+'\nТелефон: '+f.phone.value+'\nИнтересует: '+f.service.value+(f.msg.value?'\nКомментарий: '+f.msg.value:'');
-    if(via==='tg'){
-      // Telegram can't prefill a message to a phone number, so copy the text for pasting
-      if(navigator.clipboard) navigator.clipboard.writeText(text).catch(function(){});
-      alert('Текст заявки скопирован. Вставьте его в чат Telegram и нажмите «Отправить».');
-      window.open('https://t.me/+79627302769','_blank','noopener');
-    } else {
-      window.open('https://wa.me/79627302769?text='+encodeURIComponent(text),'_blank','noopener');
-    }
-  });
 
   document.getElementById('year').textContent=new Date().getFullYear();
 })();
