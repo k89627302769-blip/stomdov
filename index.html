@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Стоматология «Доверие» в Хэйхэ — лечение и протезирование зубов в Китае</title>
+<meta name="description" content="Стоматология «Доверие» (众信口腔) в Хэйхэ, напротив Благовещенска. Протезирование, имплантация, коронки и виниры. Изготовление коронок и протезов за 3–5 дней, собственный КТ.">
+<meta property="og:title" content="Стоматология «Доверие» в Хэйхэ">
+<meta property="og:description" content="Протезирование и лечение зубов в Хэйхэ (КНР), напротив Благовещенска.">
+<meta property="og:image" content="assets/img/facade.jpg">
+<meta name="theme-color" content="#0b6b5a">
+<link rel="icon" href="assets/img/favicon.png">
+<style>
+/* Шрифт хранится на сайте: страница не обращается к сторонним серверам */
+@font-face{font-family:Manrope;font-style:normal;font-weight:400 800;font-display:swap;src:url(assets/fonts/manrope-cyrillic.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:Manrope;font-style:normal;font-weight:400 800;font-display:swap;src:url(assets/fonts/manrope-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+:root{
+  --green:#0b6b5a; --green-d:#074a3e; --green-dd:#05322a;
+  --mint:#eef7f4; --mint-2:#dcefe9; --red:#c8202f;
+  --ink:#13201d; --muted:#4d5f5a; --line:#d5e5e0; --white:#fff;
+  --radius:20px; --shadow:0 10px 30px rgba(5,50,42,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;font-family:Manrope,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+img,video{max-width:100%;display:block}
+a{color:var(--green)}
+h1,h2,h3{line-height:1.15;margin:0 0 .5em;letter-spacing:-.02em}
+h2{font-size:clamp(28px,4vw,42px);font-weight:800}
+h3{font-size:20px;font-weight:700}
+p{margin:0 0 1em}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+section{padding:88px 0}
+.sec-head{max-width:720px;margin-bottom:44px}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--green);margin-bottom:12px}
+.lead{font-size:19px;color:var(--muted)}
+.bg-mint{background:var(--mint)}
+.bg-dark{background:var(--green-dd);color:#e8f3ef}
+.bg-dark h2,.bg-dark h3{color:#fff}
+.bg-dark .eyebrow{color:#8fd6c2}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 28px;border-radius:999px;font:inherit;font-weight:700;font-size:16px;text-decoration:none;border:0;cursor:pointer;transition:transform .15s,background .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--red);color:#fff;box-shadow:0 8px 20px rgba(200,32,47,.25)}
+.btn-primary:hover{background:#a91a27}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{background:var(--green-d)}
+.btn-ghost{background:rgba(255,255,255,.12);color:#fff;border:1.5px solid rgba(255,255,255,.5)}
+.btn-ghost:hover{background:rgba(255,255,255,.2)}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:24px;height:72px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);flex:none}
+.brand img{width:46px;height:46px;border-radius:50%}
+.brand b{display:block;font-size:18px;font-weight:800;line-height:1.1}
+.brand small{display:block;font-size:12px;color:var(--muted);font-weight:600}
+.menu{display:flex;gap:22px;margin-left:auto}
+.menu a{color:var(--ink);text-decoration:none;font-weight:600;font-size:15px}
+.menu a:hover{color:var(--green)}
+.nav .phone{font-weight:800;color:var(--green-d);text-decoration:none;white-space:nowrap}
+.burger{display:none;margin-left:auto;background:none;border:0;padding:8px;cursor:pointer}
+.burger span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0;border-radius:2px}
+
+/* hero */
+.hero{position:relative;color:#fff;padding:0;min-height:min(88vh,760px);display:flex;align-items:center;overflow:hidden;background:var(--green-dd)}
+.hero-bg{position:absolute;inset:0;background:url(assets/img/facade.jpg) center/cover no-repeat}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(5,50,42,.95) 0%,rgba(5,50,42,.82) 45%,rgba(5,50,42,.35) 100%)}
+.hero .wrap{position:relative;padding-top:90px;padding-bottom:90px}
+.hero h1{font-size:clamp(34px,5.4vw,62px);font-weight:800;max-width:780px}
+.hero h1 em{font-style:normal;color:#8fe0c8}
+.hero .lead{color:#d4ece5;max-width:600px;font-size:20px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin:30px 0 44px}
+.hero-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:680px}
+.fact{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:16px 18px}
+.fact b{display:block;font-size:26px;font-weight:800;color:#fff}
+.fact span{font-size:14px;color:#cfe6df}
+
+/* about */
+.about{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
+.about-photos{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.about-photos img{border-radius:var(--radius);object-fit:cover;width:100%;height:100%}
+.about-photos img:first-child{grid-row:span 2;aspect-ratio:3/4.4}
+.about-photos img:not(:first-child){aspect-ratio:1/1}
+.checks{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:10px}
+.checks li{position:relative;padding-left:34px;font-weight:600}
+.checks li::before{content:"";position:absolute;left:0;top:3px;width:22px;height:22px;border-radius:50%;background:var(--green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/14px no-repeat}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:s}
+.step{background:#fff;border-radius:var(--radius);padding:30px;box-shadow:var(--shadow);position:relative}
+.step::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:48px;height:48px;border-radius:14px;background:var(--green);color:#fff;font-weight:800;font-size:20px;margin-bottom:18px}
+.step p{color:var(--muted);margin:0}
+
+/* free */
+.free{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.card img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.card-body{padding:26px;display:flex;flex-direction:column;flex:1}
+.card-body p,.card-body li{color:var(--muted);font-size:16px}
+.card-body ol,.card-body ul{padding-left:20px;margin:0 0 1em}
+.badge{align-self:flex-start;background:var(--mint-2);color:var(--green-d);font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:14px}
+.card .btn{margin-top:auto;align-self:flex-start}
+
+/* prices */
+.prices{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.price{background:#fff;border-radius:var(--radius);padding:24px 26px;box-shadow:var(--shadow)}
+.price-top{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.price h3{margin:0;font-size:19px}
+.price .cost{font-size:22px;font-weight:800;color:var(--green);white-space:nowrap}
+.price .cost small{font-size:14px;font-weight:600;color:var(--muted)}
+.price p{color:var(--muted);font-size:15.5px;margin:10px 0 0}
+.price details{margin-top:10px}
+.price summary{cursor:pointer;color:var(--green);font-weight:700;font-size:15px;list-style:none}
+.price summary::-webkit-details-marker{display:none}
+.price summary::after{content:" ↓"}
+.price details[open] summary::after{content:" ↑"}
+.price details ul{margin:10px 0 0;padding-left:20px;color:var(--muted);font-size:15.5px}
+.note{margin-top:26px;color:var(--muted);font-size:15px;text-align:center}
+
+.videos{display:grid;grid-template-columns:repeat(2,minmax(0,300px));justify-content:center;gap:16px;margin-top:16px}
+.btn-tg{background:#229ed9;color:#fff}.btn-tg:hover{background:#1b88bc}
+.videos video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:var(--radius);background:#000}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.gallery figure{margin:0;position:relative;border-radius:var(--radius);overflow:hidden}
+.gallery img{width:100%;height:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .4s}
+.gallery figure:hover img{transform:scale(1.04)}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 16px 14px;background:linear-gradient(transparent,rgba(5,50,42,.85));color:#fff;font-weight:700;font-size:15px}
+.gallery .wide{grid-column:span 2}
+.gallery .wide img{aspect-ratio:auto}
+
+/* service */
+.service{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);padding:30px}
+.svc .ico{width:56px;height:56px;border-radius:16px;background:var(--green);display:grid;place-items:center;margin-bottom:18px}
+.svc .ico svg{width:28px;height:28px;stroke:#fff}
+.svc p{color:#cfe3dd;font-size:16px;margin:0}
+.svc .guide{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.svc .guide img{width:56px;height:56px;border-radius:50%;object-fit:cover;object-position:top;background:#fff}
+
+/* faq */
+.faq{max-width:860px;margin:0 auto}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:24px 50px 24px 0;font-weight:700;font-size:19px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:8px;top:50%;width:22px;height:22px;margin-top:-11px;background:linear-gradient(var(--ink),var(--ink)) center/100% 2px no-repeat,linear-gradient(var(--ink),var(--ink)) center/2px 100% no-repeat;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .ans{padding:0 0 24px;color:var(--muted)}
+.faq .ans ul{margin:0;padding-left:20px}
+
+/* licenses */
+.lic{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:960px;margin:0 auto}
+.lic a{display:block;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:14px;text-decoration:none;color:var(--ink);transition:box-shadow .2s}
+.lic a:hover{box-shadow:var(--shadow)}
+.lic img{border-radius:10px;width:100%;aspect-ratio:10/7;object-fit:cover}
+.lic span{display:block;font-weight:700;padding:12px 4px 2px}
+
+/* contacts */
+.contacts{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:start}
+.c-list{list-style:none;padding:0;margin:0 0 26px;display:grid;gap:16px}
+.c-list li{display:flex;gap:14px;align-items:flex-start}
+.c-list .ico{flex:none;width:44px;height:44px;border-radius:12px;background:var(--mint-2);display:grid;place-items:center}
+.c-list .ico svg{width:22px;height:22px;stroke:var(--green)}
+.c-list b{display:block}
+.c-list a{color:var(--ink);font-weight:700;text-decoration:none}
+.messengers{display:flex;flex-wrap:wrap;gap:12px}
+.map{margin-top:40px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);height:380px;background:var(--mint)}
+.map iframe{width:100%;height:100%;border:0}
+
+footer{background:var(--green-dd);color:#a9c9c0;padding:40px 0;font-size:14.5px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
+footer a{color:#fff}
+.foot-warn{flex-basis:100%;margin:0;padding-top:16px;border-top:1px solid rgba(255,255,255,.15);font-size:13.5px}
+.warn-hero{margin:26px 0 0;font-size:14px;font-weight:700;letter-spacing:.02em;text-transform:uppercase;color:#cfe6df}
+.legal-box{background:#fff;border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
+.legal-box p{color:var(--muted);font-size:15.5px}
+.legal-box .warn{margin:0;padding:14px 16px;border-radius:12px;background:var(--mint-2);color:var(--green-dd);font-weight:800;font-size:16px;text-transform:uppercase;letter-spacing:.02em}
+
+/* floating call button (mobile) */
+.fab{display:none;position:fixed;right:16px;bottom:16px;z-index:60;width:58px;height:58px;border-radius:50%;background:var(--green);box-shadow:0 8px 24px rgba(0,0,0,.25);place-items:center}
+.fab svg{width:30px;height:30px}
+
+/* responsive */
+@media (max-width:1020px){
+  .menu{display:none}
+  .burger{display:block}
+  .nav .phone{display:none}
+  .menu.open{display:flex;flex-direction:column;position:absolute;top:72px;left:0;right:0;background:#fff;padding:12px 20px 20px;border-bottom:1px solid var(--line);gap:4px}
+  .menu.open a{padding:10px 0;font-size:17px}
+  .about,.contacts{grid-template-columns:1fr}
+  .free,.service{grid-template-columns:1fr 1fr}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .videos{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:720px){
+  body{font-size:16px}
+  section{padding:64px 0}
+  .hero-facts{grid-template-columns:1fr 1fr}
+  .hero-facts .fact:last-child{grid-column:span 2}
+  .hero .wrap{padding-top:60px;padding-bottom:60px}
+  .hero .lead{font-size:17px}
+  .hero-actions .btn{flex:1 1 100%}
+  .steps,.free,.service,.prices,.lic{grid-template-columns:1fr}
+  .gallery .wide{grid-column:span 2}
+  .fab{display:grid}
+  .price-top{flex-direction:column;gap:4px}
+  .map{height:300px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="На главную">
+      <img src="assets/img/logo.jpg" alt="Логотип стоматологии «Доверие»">
+      <span><b>Доверие</b><small>众信口腔 · Хэйхэ</small></span>
+    </a>
+    <nav class="menu" id="menu">
+      <a href="#about">О нас</a>
+      <a href="#free">Бесплатно</a>
+      <a href="#prices">Цены</a>
+      <a href="#service">Сервис</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="phone" href="tel:+79627302769">+7 962 730-27-69</a>
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" role="img" aria-label="Здание клиники «Доверие» в Хэйхэ"></div>
+  <div class="wrap">
+    <span class="eyebrow" style="color:#8fe0c8">Стоматологическая клиника в Хэйхэ (КНР) · напротив Благовещенска</span>
+    <h1>Протезирование зубов в Хэйхэ за <em>3–5 дней</em></h1>
+    <p class="lead">Стоматология «Доверие» в Хэйхэ: протезирование, имплантация, коронки и виниры. Гид-переводчик клиники поможет на каждом этапе.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#contacts">Бесплатная консультация</a>
+      <a class="btn btn-ghost" href="#prices">Смотреть цены</a>
+    </div>
+    <div class="hero-facts">
+      <div class="fact"><b>3–5 дней</b><span>мосты, протезы, коронки</span></div>
+      <div class="fact"><b>КТ</b><span>собственный томограф</span></div>
+      <div class="fact"><b>Лицензия</b><span>медучреждения КНР</span></div>
+    </div>
+    <p class="warn-hero">Имеются противопоказания. Необходима консультация специалиста.</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <span class="eyebrow">Кто мы</span>
+      <h2>Ваша стоматология у самого порога</h2>
+      <p class="lead">Мы находимся в городе Хэйхэ (Китай), прямо напротив Благовещенска. Для нас нет границ для красивых улыбок.</p>
+      <p>Мы верим, что поход к стоматологу — это не про страхи и боль, а про смелый шаг к себе новому. Наши пациенты приходят не просто «полечить зуб» — они приходят за обновлением.</p>
+      <ul class="checks">
+        <li>Протезирование любой сложности</li>
+        <li>Установка имплантов</li>
+        <li>Лечение и удаление зубов</li>
+        <li>Собственный компьютерный томограф (КТ)</li>
+        <li>Лицензированная клиника</li>
+      </ul>
+    </div>
+    <div class="about-photos">
+      <img src="assets/img/doctor-yulia.jpg" alt="Врач клиники в стоматологическом кабинете" loading="lazy">
+      <img src="assets/img/cabinet.jpg" alt="Стоматологический кабинет" loading="lazy">
+      <img src="assets/img/reception.jpg" alt="Ресепшн клиники" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section class="bg-mint">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Как это работает</span>
+      <h2>Путь к идеальной улыбке — всего 3 шага</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Решение</h3><p>Вы говорите себе: «Хочу изменить свою улыбку и жизнь!» — и это самый главный шаг. Напишите нам, и мы бесплатно составим план лечения.</p></div>
+      <div class="step"><h3>Поддержка</h3><p>Вы приезжаете в клинику, где вас встречает гид-переводчик. Он поможет на каждом этапе, и вы не почувствуете себя одиноко!</p></div>
+      <div class="step"><h3>Преображение</h3><p>Наши доктора бережно берутся за дело. Всего за 3–5 дней подготовим зубы, изготовим и установим мосты, протезы или коронки. Никаких долгих месяцев ожидания!</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FREE -->
+<section id="free">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Программы лечения</span>
+      <h2>Что мы делаем бесплатно</h2>
+      <p class="lead">Комплексные программы: диагностика, лечение кариеса, протезирование и другие процедуры. Узнайте точную стоимость до поездки.</p>
+    </div>
+    <div class="free">
+      <article class="card">
+        <img src="assets/img/doctor-yulia.jpg" alt="Врач-стоматолог клиники" loading="lazy" style="object-position:center 20%">
+        <div class="card-body">
+          <span class="badge">Бесплатно</span>
+          <h3>Первичная консультация</h3>
+          <p>Получите точный план лечения и ответы на все вопросы. Как это работает:</p>
+          <ol>
+            <li>Свяжитесь с нами</li>
+            <li>Отправьте ОПТГ (панорамный снимок зубов) или фото зубов</li>
+            <li>Врач составит индивидуальный план лечения</li>
+            <li>Получите видео с наглядным разбором и объяснением</li>
+            <li>Мы рассчитаем стоимость</li>
+          </ol>
+          <a class="btn btn-green" href="#contacts">Отправить снимок</a>
+        </div>
+      </article>
+      <article class="card">
+        <img src="assets/img/ct-scan.jpg" alt="Снимок компьютерной томографии на мониторе" loading="lazy">
+        <div class="card-body">
+          <span class="badge">Бесплатно</span>
+          <h3>Компьютерная томография (КТ)</h3>
+          <p>При лечении в клинике КТ делается бесплатно. Это важный шаг перед протезированием: он помогает точно оценить состояние зубов и челюсти, увидеть детали, недоступные при обычном осмотре, и подобрать лучший способ восстановления улыбки.</p>
+          <a class="btn btn-green" href="#contacts">Записаться</a>
+        </div>
+      </article>
+      <article class="card">
+        <img src="assets/img/cabinet.jpg" alt="Стоматологический кабинет клиники" loading="lazy">
+        <div class="card-body">
+          <span class="badge">При протезировании от 10 коронок</span>
+          <h3>Лечение зубов</h3>
+          <p>При протезировании от 10 коронок мы бесплатно проведём:</p>
+          <ul>
+            <li>пломбирование и лечение зубов</li>
+            <li>лечение среднего и глубокого кариеса</li>
+            <li>лечение пульпита с эффективной анестезией</li>
+          </ul>
+          <p>Современные технологии и качественные материалы.</p>
+          <a class="btn btn-green" href="#contacts">Узнать подробнее</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PRICES -->
+<section id="prices" class="bg-mint">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Стоимость</span>
+      <h2>Цены на протезирование</h2>
+      <p class="lead">Ориентировочная стоимость за единицу. Точный расчёт — после бесплатной консультации.</p>
+    </div>
+    <div class="prices">
+      <div class="price">
+        <div class="price-top"><h3>Металлокерамические коронки</h3><span class="cost">3 000 ₽</span></div>
+        <p>Прочная металлическая основа и эстетичный керамический слой. Восстанавливают форму, цвет и функцию зуба.</p>
+        <details><summary>Подробнее</summary><ul><li>Хорошая прочность: основа выдерживает жевание</li><li>Долговечность: служат многие годы при уходе</li><li>Подходят для видимых зон улыбки и больших реставраций</li><li>Возможна повышенная чувствительность у некоторых пациентов</li></ul></details>
+      </div>
+      <div class="price">
+        <div class="price-top"><h3>Титановые коронки</h3><span class="cost">4 500 ₽</span></div>
+        <p>Прочная титановая основа, устойчивая к коррозии, и керамика, повторяющая цвет и блеск зуба.</p>
+        <details><summary>Подробнее</summary><ul><li>Безопасность: высокая биосовместимость, реже бывает аллергия</li><li>Прочность: основа не деформируется и не стирается</li><li>Естественный вид: керамика повторяет цвет и блеск зуба</li></ul></details>
+      </div>
+      <div class="price">
+        <div class="price-top"><h3>Кобальт-хромовые коронки</h3><span class="cost">5 500 ₽</span></div>
+        <p>Каркас обеспечивает прочность, слой керамики делает протез неотличимым от настоящего зуба.</p>
+        <details><summary>Подробнее</summary><ul><li>Плотное прилегание к культе и десне</li><li>Натуральный вид</li><li>Не деформируется со временем</li><li>Полное восстановление жевательной функции</li><li>Оптимальное сочетание цены и качества</li></ul></details>
+      </div>
+      <div class="price">
+        <div class="price-top"><h3>Циркониевые коронки</h3><span class="cost">10 000 ₽</span></div>
+        <p>Без металлического каркаса, из одного блока диоксида циркония. Полупрозрачные, как натуральный зуб.</p>
+        <details><summary>Подробнее</summary><ul><li>Эстетика: хорошо пропускают свет и выглядят естественно</li><li>Гипоаллергенность: не раздражают десну</li><li>Высокая прочность: выдерживают жевательные нагрузки</li></ul></details>
+      </div>
+      <div class="price">
+        <div class="price-top"><h3>Виниры</h3><span class="cost">15 000 ₽</span></div>
+        <p>«Эстетический ремонт» зубов: виниры маскируют внешние недостатки, чтобы улыбка стала безупречной.</p>
+      </div>
+      <div class="price">
+        <div class="price-top"><h3>Акриловые съёмные протезы</h3><span class="cost">15 000 ₽</span></div>
+        <p>Удобное и доступное решение для восстановления зубного ряда. Отличный вариант для тех, кто ищет бюджетное решение.</p>
+        <details><summary>Подробнее</summary><ul><li>Лёгкие и комфортные в ношении</li><li>Хорошая фиксация и естественный внешний вид</li><li>Полное восстановление жевательной функции</li></ul></details>
+      </div>
+      <div class="price">
+        <div class="price-top"><h3>Бюгельный протез на микрозамках</h3><span class="cost">25 000 ₽</span></div>
+        <p>Для частичной утраты зубов. Замки дают жёсткую, почти неподвижную фиксацию, и крепление не видно со стороны.</p>
+        <details><summary>Подробнее</summary><ul><li>Надёжно фиксируется, не сдвигается при жевании</li><li>Лёгкий, не создаёт дискомфорта</li><li>Можно выбрать вариант с искусственными дёснами или скрытым креплением</li><li>Долговечный</li></ul></details>
+      </div>
+      <div class="price">
+        <div class="price-top"><h3>Имплантация зубов</h3><span class="cost">50 000 ₽</span></div>
+        <p>Титановый имплант безопасен для здоровья и хорошо приживается. Проходит в два визита.</p>
+        <details><summary>Подробнее</summary><ul><li>Визит 1: установка импланта в кость. Затем заживление около 5–6 месяцев</li><li>Визит 2: установка абатмента и коронки (искусственного зуба)</li><li>Титан редко вызывает аллергию и воспаления, прочен и служит долго</li></ul></details>
+      </div>
+    </div>
+    <p class="note">Цены указаны для справки и не являются публичной офертой. Оплата производится в клинике. Гарантийные сроки устанавливает клиника, уточняйте их на консультации.</p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="bg-mint">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Клиника</span>
+      <h2>Современное оборудование и уютные кабинеты</h2>
+      <p class="lead">Собственный компьютерный томограф, современные кабинеты и внимательный персонал.</p>
+    </div>
+    <div class="gallery">
+      <figure class="wide"><img src="assets/img/facade.jpg" alt="Многопрофильный медицинский центр «Доверие»" loading="lazy"><figcaption>Медицинский центр «Доверие»</figcaption></figure>
+      <figure><img src="assets/img/reception.jpg" alt="Ресепшн" loading="lazy"><figcaption>Ресепшн</figcaption></figure>
+      <figure><img src="assets/img/ct-room.jpg" alt="Кабинет компьютерной томографии" loading="lazy"><figcaption>Кабинет КТ</figcaption></figure>
+      <figure><img src="assets/img/cabinet.jpg" alt="Стоматологический кабинет" loading="lazy"><figcaption>Стоматологический кабинет</figcaption></figure>
+      <figure><img src="assets/img/doctor-yulia.jpg" alt="Врач Юлия" loading="lazy"><figcaption>Врач Юлия</figcaption></figure>
+      <figure class="wide"><img src="assets/img/ct-scan.jpg" alt="3D-снимок КТ на мониторе" loading="lazy"><figcaption>3D-диагностика на КТ</figcaption></figure>
+    </div>
+    <div class="videos">
+      <video src="assets/video/facade.mp4" poster="assets/video/facade.jpg" controls playsinline preload="none" aria-label="Видео: здание клиники"></video>
+      <video src="assets/video/clinic.mp4" poster="assets/video/clinic.jpg" controls playsinline preload="none" aria-label="Видео: холл клиники"></video>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE -->
+<section id="service" class="bg-dark">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Помощь пациентам</span>
+      <h2>Поможем с дорогой и проживанием</h2>
+      <p class="lead" style="color:#cfe3dd">Клиника помогает пациентам из России освоиться в Хэйхэ. Условия уточняйте при записи.</p>
+    </div>
+    <div class="service">
+      <div class="svc">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M6 17V9l2-4h8l2 4v8"/><circle cx="8" cy="17" r="2"/><circle cx="16" cy="17" r="2"/><path d="M6 11h12"/></svg></div>
+        <h3>Трансфер</h3>
+        <p>Подскажем, как добраться из Благовещенска, и поможем с транспортом до клиники и гостиницы в Хэйхэ.</p>
+      </div>
+      <div class="svc">
+        <div class="guide"><img src="assets/img/guide.jpg" alt="Гид-переводчик" loading="lazy"><h3 style="margin:0">Гид-переводчик</h3></div>
+        <p>Сопровождает вас в клинике и переводит консультации, рекомендации врача и расписание приёмов. Никаких языковых барьеров.</p>
+      </div>
+      <div class="svc">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20V8l9-5 9 5v12"/><path d="M3 20h18M9 20v-6h6v6"/></svg></div>
+        <h3>Проживание</h3>
+        <p>Поможем подобрать гостиницу рядом с клиникой. При протезировании от 10 коронок клиника оплачивает проживание — условия уточняйте.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="bg-mint">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Вопросы</span>
+      <h2>Часто задаваемые вопросы</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Где проходит лечение?</summary>
+        <div class="ans">В стоматологии «Доверие» (众信口腔门诊部) в городе Хэйхэ (КНР), напротив Благовещенска. Клиника работает по лицензии медицинского учреждения КНР, копии документов — ниже на странице. Лечение проводится по законодательству КНР.</div>
+      </details>
+      <details>
+        <summary>Что клиника делает бесплатно?</summary>
+        <div class="ans"><ul>
+          <li>консультация и план лечения по снимку;</li>
+          <li>компьютерная томография (КТ) при лечении в клинике;</li>
+          <li>помощь гида-переводчика в клинике;</li>
+          <li>при протезировании от 10 коронок — лечение зубов и проживание в гостинице.</li>
+        </ul></div>
+      </details>
+      <details>
+        <summary>Сколько времени занимает лечение?</summary>
+        <div class="ans">Подготовка зубов, изготовление и установка мостов, протезов или коронок — 3–5 дней. Имплантация проходит в два визита с перерывом около 5–6 месяцев на приживление импланта.</div>
+      </details>
+      <details>
+        <summary>Какая гарантия на лечение?</summary>
+        <div class="ans">Гарантийные сроки устанавливает клиника, они зависят от вида работы и материалов. Точный срок вам назовут на консультации и укажут в документах клиники.</div>
+      </details>
+      <details>
+        <summary>Какие документы нужны для поездки?</summary>
+        <div class="ans">Действующий заграничный паспорт. Актуальные условия въезда в Китай и порядок пересечения границы мы подскажем при записи — напишите нам перед поездкой.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- LICENSES -->
+<section>
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Документы</span>
+      <h2>Лицензии клиники</h2>
+      <p class="lead">Клиника официально зарегистрирована и имеет разрешение на медицинскую деятельность.</p>
+    </div>
+    <div class="lic">
+      <a href="assets/img/license-business.jpg" target="_blank" rel="noopener"><img src="assets/img/license-business.jpg" alt="Бизнес-лицензия клиники" loading="lazy"><span>Свидетельство о регистрации (营业执照)</span></a>
+      <a href="assets/img/license-medical.jpg" target="_blank" rel="noopener"><img src="assets/img/license-medical.jpg" alt="Лицензия медицинского учреждения" loading="lazy"><span>Лицензия медицинского учреждения</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts" class="bg-mint">
+  <div class="wrap">
+    <div class="contacts">
+      <div>
+        <span class="eyebrow">Контакты</span>
+        <h2>Свяжитесь с нами</h2>
+        <p class="lead">Позвоните или напишите нам — расскажем о лечении, поможем с записью и рассчитаем стоимость.</p>
+        <ul class="c-list">
+          <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><span><b>Телефон</b><a href="tel:+79627302769">+7 962 730-27-69</a></span></li>
+          <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span><b>Адрес</b>г. Хэйхэ, ул. Чжунъян, д. 614<br><small style="color:var(--muted)">黑龙江省黑河市爱辉区中央街614号</small></span></li>
+        </ul>
+        <div class="messengers">
+          <a class="btn btn-green" href="tel:+79627302769">Позвонить</a>
+          <a class="btn btn-tg" href="https://t.me/+79627302769" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.7 19.4c-.2 1.1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-5 9.2-8.3c.4-.4-.1-.6-.6-.2L6.2 13 1.3 11.5c-1.1-.3-1.1-1.1.2-1.6L20.6 2.5c.9-.3 1.7.2 1.3 1.8z"/></svg>Telegram</a>
+        </div>
+      </div>
+      <div class="legal-box">
+        <h3>Важная информация</h3>
+        <p>Медицинские услуги оказывает 黑河市爱辉区众信口腔门诊部 (стоматологическая клиника «Доверие», г. Хэйхэ, КНР) на основании лицензии медицинского учреждения КНР и в соответствии с законодательством КНР. Договор на лечение и оплата — непосредственно с клиникой.</p>
+        <p>Информация на сайте носит справочный характер и не является публичной офертой. Сайт не собирает персональные данные. Пожалуйста, не отправляйте медицинские документы и снимки, пока не ознакомитесь с <a href="privacy.html">порядком обработки данных</a>.</p>
+        <p class="warn">Имеются противопоказания. Необходима консультация специалиста.</p>
+      </div>
+    </div>
+    <div class="map">
+      <iframe src="https://yandex.ru/map-widget/v1/?text=%D0%A5%D1%8D%D0%B9%D1%85%D1%8D%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A7%D0%B6%D1%83%D0%BD%D1%8A%D1%8F%D0%BD%2C%20614&amp;z=16" title="Клиника на карте" loading="lazy" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Стоматология «Доверие» · 黑河市爱辉区众信口腔门诊部</span>
+    <span><a href="tel:+79627302769">+7 962 730-27-69</a> · г. Хэйхэ, ул. Чжунъян, 614 · <a href="privacy.html">Конфиденциальность</a></span>
+    <p class="foot-warn">Имеются противопоказания. Необходима консультация специалиста. Медицинские услуги оказываются в КНР клиникой 黑河市爱辉区众信口腔门诊部.</p>
+  </div>
+</footer>
+
+<a class="fab" href="tel:+79627302769" aria-label="Позвонить"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></a>
+
+<script>
+(function(){
+  var burger=document.getElementById('burger'), menu=document.getElementById('menu');
+  burger.addEventListener('click',function(){
+    var open=menu.classList.toggle('open');
+    burger.setAttribute('aria-expanded',open);
+  });
+  menu.addEventListener('click',function(e){ if(e.target.tagName==='A'){menu.classList.remove('open');burger.setAttribute('aria-expanded','false');} });
+
+  // Only one video plays at a time
+  var vids=document.querySelectorAll('video');
+  vids.forEach(function(v){ v.addEventListener('play',function(){ vids.forEach(function(o){ if(o!==v) o.pause(); }); }); });
+
+  document.getElementById('year').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
