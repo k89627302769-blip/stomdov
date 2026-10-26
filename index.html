@@ -74,7 +74,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdro
 .hero h1 em{font-style:normal;color:#8fe0c8}
 .hero .lead{color:#d4ece5;max-width:600px;font-size:20px}
 .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin:30px 0 44px}
-.hero-facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;max-width:880px}
+.hero-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:680px}
 .fact{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:16px 18px}
 .fact b{display:block;font-size:26px;font-weight:800;color:#fff}
 .fact span{font-size:14px;color:#cfe6df}
@@ -201,6 +201,7 @@ footer a{color:#fff}
   body{font-size:16px}
   section{padding:64px 0}
   .hero-facts{grid-template-columns:1fr 1fr}
+  .hero-facts .fact:last-child{grid-column:span 2}
   .hero .wrap{padding-top:60px;padding-bottom:60px}
   .hero .lead{font-size:17px}
   .hero-actions .btn{flex:1 1 100%}
@@ -248,7 +249,6 @@ footer a{color:#fff}
     <div class="hero-facts">
       <div class="fact"><b>3–5 дней</b><span>мосты, протезы, коронки</span></div>
       <div class="fact"><b>КТ</b><span>собственный томограф</span></div>
-      <div class="fact"><b>4 кресла</b><span>стоматологических</span></div>
       <div class="fact"><b>Лицензия</b><span>медучреждения КНР</span></div>
     </div>
     <p class="warn-hero">Имеются противопоказания. Необходима консультация специалиста.</p>
@@ -268,7 +268,7 @@ footer a{color:#fff}
         <li>Установка имплантов</li>
         <li>Лечение и удаление зубов</li>
         <li>Собственный компьютерный томограф (КТ)</li>
-        <li>Лицензированная клиника, 4 стоматологических кресла</li>
+        <li>Лицензированная клиника</li>
       </ul>
     </div>
     <div class="about-photos">
